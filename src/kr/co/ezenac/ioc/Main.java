@@ -14,7 +14,7 @@ public class Main {
         System.out.println(result);
 
         //url encoding
-        UrlEncoder urlEncoder = new UrlEncoder();
+        IEncoder urlEncoder = new UrlEncoder();
         String urlResult = urlEncoder.encode(url);
         System.out.println(urlResult);
     }
