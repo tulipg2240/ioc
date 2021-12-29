@@ -5,6 +5,8 @@ import java.net.URLEncoder;
 
 public class UrlEncoder implements IEncoder {
 
+
+    @Override
     public String encode(String message) {
         try {
             return URLEncoder.encode(message, "utf-8");

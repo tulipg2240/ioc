@@ -1,6 +1,7 @@
 package kr.co.ezenac.ioc;
 
 import java.net.URLEncoder;
+import java.util.Base64;
 
 public class Main {
 
@@ -9,7 +10,7 @@ public class Main {
         String url = "www.google.com/books/it?page=100&name=springframework";
 
         //Base64 encoding
-        Encoder encoder = new Encoder();
+        IEncoder encoder = new Base64Encoder();
         String result = encoder.encode(url);
         System.out.println(result);
 
